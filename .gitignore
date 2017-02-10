@@ -8,4 +8,5 @@ syntax: glob
 Thumbs.db
 .idea
 *.log
+.well-known
 config.php
