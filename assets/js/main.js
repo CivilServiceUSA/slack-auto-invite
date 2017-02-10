@@ -175,7 +175,7 @@ function getParameterByName(name) {
           success: function (response) {
             if(response.success) {
               $form.reset();
-              $submit.disabled = false;
+              $submit.disabled = true;
               $message._show('success', 'The invite is on its way!');
             } else {
               $submit.disabled = false;
@@ -184,11 +184,9 @@ function getParameterByName(name) {
           }
         });
       } else if (!validEmail) {
-        //$form.reset();
         $submit.disabled = false;
         $message._show('error', 'Please type a valid email address');
       } else if (!validInvite) {
-        //$form.reset();
         $submit.disabled = false;
         $message._show('error', 'Please type a valid invite code');
       }
