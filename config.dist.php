@@ -15,6 +15,8 @@ define('SLACK_TOKEN', 'XXXX-XXXXXXXXXXXX-XXXXXXXXXXXX-XXXXXXXXXXXX-XXXXXXXXXXXXX
  * Once the new user registers, they will received a Direct Message letting them know
  * a new user signed up using their unique code.
  *
+ * SAMPLE URL:  https://slack.mywebsite.com/abc123
+ *
  * slack_id - This is the `members.id` returned from https://api.slack.com/methods/users.list
  * slack_name - This is the `members.name` returned from https://api.slack.com/methods/users.list
  * slack_ims_id - This is the `ims.id` returned the `ims.user` that matches `members.id` for from https://api.slack.com/methods/im.list
