@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL);
 require('config.php');
 
 header('Cache-Control: no-cache, must-revalidate');
@@ -29,7 +29,6 @@ foreach (INVITE_TOKENS as $key => $value) {
  */
 function makeApiCall ($url, $data) {
     $ch = curl_init();
-
     $fields = http_build_query($data);
 
     curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -81,7 +80,6 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && $valid_invite) {
             'username' => 'New Member Notification'
         ));
     } else {
-
         $errorKeys = array(
             'already_invited' => 'Invite Already Sent',
             'already_in_team' => 'You are already on our team',
