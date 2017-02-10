@@ -1,12 +1,3 @@
-
-function getParameterByName(name) {
-  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    results = regex.exec(location.search);
-  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
-
 (function() {
 
   "use strict";
@@ -116,11 +107,6 @@ function getParameterByName(name) {
       $email = document.querySelectorAll('#signup-form #email')[0],
       $invite = document.querySelectorAll('#signup-form #invite')[0],
       $message;
-
-    //prefill value if any
-    $email.value = getParameterByName('email');
-    $invite.value = getParameterByName('invite');
-
 
     // Bail if addEventListener isn't supported.
     if (!('addEventListener' in $form))

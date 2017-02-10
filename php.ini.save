@@ -1,0 +1,571 @@
+    1 nano ~/.zshrc
+    2 source ~/.zshrc
+    3 nano ~/.zshrc
+    4 source ~/.zshrc
+    5 clear
+    6 nano ~/.zshrc
+    7 exit
+    8 touch ~/.hushlogin
+    9 exit
+   10 clear
+   11 pwd
+   12 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+   13 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+   14 source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+   15 clear
+   16 sudo nano /etc/nginx/sites-available/default
+   17 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bu
+   18 sudo nano /etc/nginx/sites-available/default
+   19 sudo nano /etc/nginx/sites-enabled
+   20 sudo nano /etc/nginx/sites-enabled/default
+   21 sudo nano /etc/nginx/sites-available/default.bu
+   22 sudo mkdir -p /var/www/peterschmalfeldt.com/html
+   23 sudo chown -R $USER:$USER /var/www/peterschmalfeldt.com/html
+   24 sudo chmod -R 755 /var/www
+   25 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+   26 sudo nano /etc/nginx/nginx.conf
+   27 sudo ln -s /etc/nginx/sites-available/peterschmalfeldt.com /etc/nginx/sites-enabled/
+   28 sudo nginx -t
+   29 cd /opt/letsencrypt
+   30 sudo systemctl reload nginx
+   31 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/peterschmalfeldt.com/html -d peterschmalfeldt.com -d www.peterschmalfeldt.com
+   32 exit
+   33 cd /opt/letsencrypt
+   34 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/peterschmalfeldt.com/html -d peterschmalfeldt.com -d www.peterschmalfeldt.com
+   35 sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+   36 sudo nano /etc/nginx/snippets/ssl-peterschmalfeldt.com.conf
+   37 sudo nano /etc/nginx/snippets/ssl-params.conf
+   38 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+   39 sudo ufw status
+   40 sudo nginx -t
+   41 sudo systemctl restart nginx
+   42 sudo ufw app list
+   43 sudo ufw allow 'Nginx HTTP'
+   44 sudo ufw app list
+   45 sudo ufw status
+   46 sudo apt-get install curl
+   47 sudo ufw allow OpenSSH
+   48 sudo ufw allow 'Nginx HTTPS'
+   49 sudo ufw allow 'Nginx Full'
+   50 sudo ufw app list
+   51 sudo ufw enable
+   52 adduser mrmidi
+   53 usermod -aG sudo mrmidi
+   54 sudo nano /etc/nginx/snippets/basic.conf
+   55 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+   56 sudo nginx -t
+   57 sudo nano /etc/nginx/snippets/basic.conf
+   58 sudo nginx -t
+   59 sudo systemctl restart nginx
+   60 nano /usr/local/nginx/html/404.html
+   61 sudo nano /etc/nginx/snippets/basic.conf
+   62 sudo nginx -t
+   63 sudo systemctl restart nginx
+   64 sudo nano /etc/nginx/snippets/basic.conf
+   65 sudo systemctl restart nginx
+   66 sudo nano /etc/nginx/nginx.conf
+   67 sudo systemctl restart nginx
+   68 sudo nano /etc/nginx/snippets/basic.conf
+   69 sudo nginx -t
+   70 sudo systemctl restart nginx
+   71 sudo nano /etc/nginx/snippets/basic.conf
+   72 sudo systemctl restart nginx
+   73 sudo nano /etc/nginx/nginx.conf
+   74 sudo nginx -t
+   75 sudo systemctl restart nginx
+   76 sudo nano /etc/nginx/nginx.conf
+   77 sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bu
+   78 sudo nano /etc/nginx/nginx.conf
+   79 sudo nginx -t
+   80 sudo nano /etc/nginx/nginx.conf
+   81 sudo nginx -t
+   82 sudo nano /etc/nginx/nginx.conf
+   83 sudo nginx -t
+   84 sudo nano /etc/nginx/nginx.conf
+   85 sudo nano /etc/nginx/snippets/ssl-params.conf
+   86 sudo nano /etc/nginx/nginx.conf
+   87 sudo nginx -t
+   88 sudo systemctl restart nginx
+   89 sudo nano /etc/nginx/nginx.conf
+   90 ulimit -n
+   91 sudo nano /etc/nginx/nginx.conf
+   92 ulimit -n
+   93 sudo nginx -t
+   94 sudo systemctl restart nginx
+   95 sudo nano /etc/nginx/nginx.conf
+   96 sudo nginx -t
+   97 sudo systemctl restart nginx
+   98 sudo nano /etc/nginx/snippets/ssl-params.conf
+   99 sudo nano /etc/nginx/snippets/basic.conf
+  100 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  101 sudo nano /etc/nginx/snippets/ssl-peterschmalfeldt.com.conf
+  102 history | grep mkdir
+  103 history | grep peterschmalfeldt
+  104 history | grep chmod
+  105 history | grep chmown
+  106 history | grep chown
+  107 sudo nano /etc/nginx/snippets/ssl-peterschmalfeldt.com.conf
+  108 clear
+  109 sudo mkdir -p /var/www/peter.build/html
+  110 sudo nano /etc/nginx/sites-available/peter.build
+  111 sudo ln -s /etc/nginx/sites-available/peter.build /etc/nginx/sites-enabled/
+  112 sudo nginx -t
+  113 sudo nano /etc/nginx/sites-available/peter.build
+  114 sudo nginx -t
+  115 sudo systemctl restart nginx
+  116 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/peter.build/html -d peter.build -d www.peter.build
+  117 sudo nano /etc/nginx/sites-available/peter.build
+  118 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/peter.build/html -d peter.build
+  119 sudo nano /etc/nginx/snippets/ssl-peter.build.conf
+  120 sudo nano /etc/nginx/sites-available/peter.build
+  121 sudo nginx -t
+  122 sudo systemctl restart nginx
+  123 sudo apt-get install php-fpm php-mysql
+  124 sudo nano /etc/php/7.0/fpm/php.ini
+  125 sudo systemctl restart php7.0-fpm
+  126 sudo nano /etc/nginx/snippets/basic.conf
+  127 sudo nano /etc/nginx/sites-available/peter.build
+  128 sudo nano /etc/nginx/snippets/basic.conf
+  129 sudo nginx -t
+  130 sudo systemctl restart nginx
+  131 sudo chmod -R u+rwX,go+rX,go-w /var/www
+  132 sudo chown -R $USER:$USER /var/www/peter.build/html
+  133 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/peter.build/html -d peter.build -d www.peter.build
+  134 sudo systemctl restart nginx
+  135 clear
+  136 sudo mkdir -p /var/www/website.com/html
+  137 sudo mkdir -p /var/www/briosum.com/html
+  138 rm -fr /var/www/website.com
+  139 sudo nano /etc/nginx/sites-available/briosum.com
+  140 sudo ln -s /etc/nginx/sites-available/briosum.com /etc/nginx/sites-enabled/
+  141 sudo nano /etc/nginx/sites-available/briosum.com
+  142 sudo nginx -t
+  143 sudo systemctl restart nginx
+  144 sudo nano /etc/nginx/sites-available/briosum.com
+  145 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/briosum.com/html -d briosum.com -d www.briosum.com
+  146 sudo nano /etc/nginx/snippets/ssl-briosum.com.conf
+  147 sudo chmod -R u+rwX,go+rX,go-w /var/www/briosum.com/html
+  148 sudo chown -R $USER:$USER /var/www/briosum.com/html
+  149 sudo nano /etc/nginx/sites-available/briosum.com
+  150 sudo nginx -t
+  151 sudo systemctl restart nginx
+  152 sudo mkdir -p /var/www/faicons.com/html
+  153 sudo mkdir -p /var/www/jqvmap.com/html
+  154 sudo mkdir -p /var/www/jsonsh.com/html
+  155 sudo mkdir -p /var/www/promptr.tv/html
+  156 sudo mkdir -p /var/www/resize.mobi/html
+  157 sudo mkdir -p /var/www/somniumorbis.com/html
+  158 sudo mkdir -p /var/www/sprintsee.com/html
+  159 sudo nano /etc/nginx/sites-available/faicons.com
+  160 sudo touch /etc/nginx/sites-available/faicons.com
+  161 sudo touch /etc/nginx/sites-available/jqvmap.com
+  162 sudo touch /etc/nginx/sites-available/jsonsh.com
+  163 sudo touch /etc/nginx/sites-available/promptr.tv
+  164 sudo touch /etc/nginx/sites-available/resize.mobi
+  165 sudo touch /etc/nginx/sites-available/somniumorbis.com
+  166 sudo touch /etc/nginx/sites-available/sprintsee.com
+  167 sudo nano /etc/nginx/sites-available/faicons.com
+  168 sudo nano /etc/nginx/sites-available/jqvmap.com
+  169 sudo nano /etc/nginx/sites-available/jsonsh.com
+  170 sudo nano /etc/nginx/sites-available/promptr.tv
+  171 sudo nano /etc/nginx/sites-available/resize.mobi
+  172 sudo nano /etc/nginx/sites-available/somniumorbis.com
+  173 sudo nano /etc/nginx/sites-available/sprintsee.com
+  174 sudo ln -s /etc/nginx/sites-available/faicons.com /etc/nginx/sites-enabled/
+  175 sudo ln -s /etc/nginx/sites-available/jqvmap.com /etc/nginx/sites-enabled/
+  176 sudo ln -s /etc/nginx/sites-available/jsonsh.com /etc/nginx/sites-enabled/
+  177 sudo ln -s /etc/nginx/sites-available/promptr.tv /etc/nginx/sites-enabled/
+  178 sudo ln -s /etc/nginx/sites-available/resize.mobi /etc/nginx/sites-enabled/
+  179 sudo ln -s /etc/nginx/sites-available/somniumorbis.com /etc/nginx/sites-enabled/
+  180 sudo ln -s /etc/nginx/sites-available/sprintsee.com /etc/nginx/sites-enabled/
+  181 sudo nginx -t
+  182 sudo systemctl restart nginx
+  183 sudo nano /etc/nginx/sites-available/sprintsee.com
+  184 sudo systemctl restart nginx
+  185 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/sprintsee.com/html -d sprintsee.com -d www.sprintsee.com
+  186 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/sprintsee.com/app -d app.sprintsee.com
+  187 sudo nano /etc/nginx/snippets/ssl-sprintsee.com.conf
+  188 sudo nano /etc/nginx/snippets/ssl-app.sprintsee.com.conf
+  189 sudo nano /etc/nginx/sites-available/sprintsee.com
+  190 sudo nginx -t
+  191 sudo systemctl restart nginx
+  192 sudo nano /etc/nginx/sites-available/sprintsee.com
+  193 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/sprintsee.com/html -d faicons.com -d www.faicons.com
+  194 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/faicons.com/html -d faicons.com -d www.faicons.com
+  195 sudo chmod -R u+rwX,go+rX,go-w /var/www/sprintsee.com/html
+  196 sudo chmod -R u+rwX,go+rX,go-w /var/www/sprintsee.com/app
+  197 sudo chown -R $USER:$USER /var/www/sprintsee.com/html
+  198 sudo chown -R $USER:$USER /var/www/sprintsee.com/app
+  199 sudo nano /etc/nginx/snippets/ssl-faicons.com.conf
+  200 sudo nano /etc/nginx/sites-available/faicons.com
+  201 sudo nginx -t
+  202 sudo systemctl restart nginx
+  203 cd /usr/var/nginx/errors
+  204 clear
+  205 cd /etc/nginx/
+  206 ls
+  207 cd conf.d
+  208 ls
+  209 cd ,,.
+  210 ..
+  211 nano nginx.conf
+  212 pwd
+  213 ls
+  214 nano nginx.conf
+  215 cd /var/www
+  216 ls
+  217 cd ../
+  218 ls
+  219 ls /usr/share/nginx/html
+  220 cd /usr/share/nginx/html
+  221 ls
+  222 nano index.html
+  223 cd /usr/share/nginx/html
+  224 git clone https://github.com/manifestinteractive/disaster-girl-error-pages.git .
+  225 ls
+  226 mkdir error-pages
+  227 cd error-pages
+  228 git clone https://github.com/manifestinteractive/disaster-girl-error-pages.git .
+  229 git fetch && git pull
+  230 sudo nano /etc/nginx/snippets/error-pages.conf
+  231 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  232 sudo nginx -t
+  233 sudo systemctl restart nginx
+  234 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  235 sudo systemctl restart nginx
+  236 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  237 sudo systemctl restart nginx
+  238 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  239 ls
+  240 sudo chmod -R u+rwX,go+rX,go-w /usr/share/nginx/html/error-pages
+  241 sudo chown -R $USER:$USER /usr/share/nginx/html/error-pages
+  242 sudo nano /etc/nginx/snippets/error-pages.conf
+  243 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  244 sudo systemctl restart nginx
+  245 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  246 sudo systemctl restart nginx
+  247 git fetch && git pull
+  248 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  249 sudo nano /etc/nginx/sites-available/briosum.com
+  250 sudo nano /etc/nginx/sites-available/faicons.com
+  251 sudo nano /etc/nginx/sites-available/jqvmap.com
+  252 sudo nano /etc/nginx/sites-available/jsonsh.com
+  253 sudo nano /etc/nginx/sites-available/peter.build
+  254 sudo nano /etc/nginx/sites-available/promptr.tv
+  255 sudo nano /etc/nginx/sites-available/resize.mobi
+  256 sudo nano /etc/nginx/sites-available/somniumorbis.com
+  257 sudo nano /etc/nginx/sites-available/sprintsee.com
+  258 sudo systemctl restart nginx
+  259 sudo nano /etc/nginx/sites-available/briosum.com
+  260 sudo systemctl restart nginx
+  261 sudo nano /etc/nginx/sites-available/default
+  262 cd /var/www/html
+  263 ls
+  264 nano index.nginx-debian.html
+  265 sudo nano /etc/nginx/sites-available/faicons.com
+  266 clear
+  267 cd /etc/letsencrypt
+  268 ls
+  269 history | grep letsencrypt
+  270 cd /opt/letsencrypt
+  271 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/jqvmap.com/html -d jqvmap.com -d www.jqvmap.com
+  272 sudo nano /etc/nginx/snippets/ssl-jqvmap.com.conf
+  273 sudo chmod -R u+rwX,go+rX,go-w /var/www/jqvmap.com/html
+  274 sudo chown -R $USER:$USER /var/www/qvmap.com/html
+  275 sudo chown -R $USER:$USER /var/www/jqvmap.com/html
+  276 sudo nano /etc/nginx/sites-available/jqvmap.com
+  277 sudo nginx -t
+  278 sudo systemctl restart nginx
+  279 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/jsonsh.com/html -d jsonsh.com -d www.jsonsh.com
+  280 sudo nano /etc/nginx/snippets/ssl-jqvmap.com.conf
+  281 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/jsonsh.com/html -d jsonsh.com -d www.jsonsh.com
+  282 clear
+  283 sudo nano /etc/nginx/snippets/ssl-jsonsh.com.conf
+  284 sudo chmod -R u+rwX,go+rX,go-w /var/www/jsonsh.com/html
+  285 sudo chown -R $USER:$USER /var/www/jsonsh.com/html
+  286 sudo nano /etc/nginx/sites-available/jsonsh.com
+  287 sudo nginx -t
+  288 sudo systemctl restart nginx
+  289 sudo mkdir -p /var/www/guid.it/html
+  290 sudo nano /etc/nginx/sites-available/guid.it
+  291 sudo nginx -t
+  292 sudo ln -s /etc/nginx/sites-available/guid.it /etc/nginx/sites-enabled/
+  293 sudo chmod -R u+rwX,go+rX,go-w /var/www/guid.it/html
+  294 sudo chown -R $USER:$USER /var/www/guid.it/html
+  295 clear
+  296 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/promptr.tv/html -d promptr.tv -d www.promptr.tv
+  297 \nsudo nano /etc/nginx/snippets/ssl-promptr.tv.conf
+  298 sudo chmod -R u+rwX,go+rX,go-w /var/www/promptr.tv/html
+  299 sudo chown -R $USER:$USER /var/www/promptr.tv/html
+  300 sudo nano /etc/nginx/sites-available/promptr.tv
+  301 sudo nginx -t
+  302 sudo systemctl restart nginx
+  303 sudo nano /etc/nginx/sites-available/resize.mobi
+  304 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/resize.mobi/html -d resize.mobi -d www.resize.mobi
+  305 sudo nano /etc/nginx/snippets/ssl-resize.mobi.conf
+  306 sudo chmod -R u+rwX,go+rX,go-w /var/www/resize.mobi/html
+  307 sudo chown -R $USER:$USER /var/www/resize.mobi/html
+  308 sudo nginx -t
+  309 sudo systemctl restart nginx
+  310 sudo nano /etc/nginx/sites-available/resize.mobi
+  311 sudo systemctl restart nginx
+  312 sudo nano /etc/nginx/sites-available/resize.mobi
+  313 sudo systemctl restart nginx
+  314 sudo nano /etc/nginx/sites-available/resize.mobi
+  315 nano /etc/nginx/nginx.conf
+  316 sudo nano /etc/nginx/snippets/ssl-params.conf
+  317 sudo systemctl restart nginx
+  318 sudo nano /etc/nginx/snippets/ssl-params.conf
+  319 sudo nano /etc/nginx/sites-available/briosum.com
+  320 sudo nano /etc/nginx/sites-available/faicons.com
+  321 sudo nano /etc/nginx/sites-available/guid.it
+  322 sudo nano /etc/nginx/sites-available/jqvmap.com
+  323 sudo nano /etc/nginx/sites-available/jsonsh.com
+  324 sudo nano /etc/nginx/sites-available/peter.build
+  325 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  326 sudo nano /etc/nginx/sites-available/promptr.tv
+  327 sudo nano /etc/nginx/sites-available/somniumorbis.com
+  328 sudo nano /etc/nginx/sites-available/sprintsee.com
+  329 sudo systemctl restart nginx
+  330 sudo nano /etc/nginx/sites-available/resize.mobi
+  331 sudo systemctl restart nginx
+  332 sudo nano /etc/nginx/sites-available/resize.mobi
+  333 sudo systemctl restart nginx
+  334 sudo nano /etc/nginx/sites-available/resize.mobi
+  335 sudo systemctl restart nginx
+  336 sudo nano /etc/nginx/sites-available/resize.mobi
+  337 sudo systemctl restart nginx
+  338 sudo nano /etc/nginx/sites-available/resize.mobi
+  339 sudo systemctl restart nginx
+  340 sudo nano /etc/nginx/sites-available/resize.mobi
+  341 sudo systemctl restart nginx
+  342 sudo nano /etc/nginx/sites-available/resize.mobi
+  343 sudo systemctl restart nginx
+  344 sudo nano /etc/nginx/sites-available/resize.mobi
+  345 sudo nano /etc/nginx/sites-available/guid.it
+  346 sudo chmod -R u+rwX,go+rX,go-w /var/www/guid.it/html
+  347 sudo chown -R $USER:$USER /var/www/guid.it/html
+  348 sudo nano /etc/nginx/sites-available/guid.it
+  349 sudo systemctl restart nginx
+  350 sudo nano /etc/nginx/sites-available/resize.mobi
+  351 sudo nano /etc/nginx/sites-available/guid.it
+  352 sudo systemctl restart nginx
+  353 sudo nano /etc/nginx/sites-available/resize.mobi
+  354 sudo nano /etc/nginx/sites-available/guid.it
+  355 sudo systemctl restart nginx
+  356 sudo nano /etc/nginx/sites-available/guid.it
+  357 sudo nginx -t
+  358 sudo systemctl restart nginx
+  359 sudo nano /etc/nginx/sites-available/guid.it
+  360 sudo nano /etc/nginx/sites-available/resize.mobi
+  361 sudo nano /etc/nginx/sites-available/guid.it
+  362 sudo systemctl restart nginx
+  363 history | grep php.ini
+  364 sudo nano /etc/php/7.0/fpm/php.ini
+  365 sudo nano /etc/nginx/snippets/basic.conf
+  366 clear
+  367 cd /opt/letsencrypt
+  368 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/guid.it/html -d guid.it -d www.guid.it
+  369 sudo nano /etc/nginx/snippets/ssl-guid.it.conf
+  370 sudo nano /etc/nginx/sites-available/guid.it
+  371 sudo nginx -t
+  372 ls /etc/letsencrypt/live/
+  373 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/guid.it/html -d guid.it -d www.guid.it
+  374 sudo nginx -t
+  375 sudo systemctl restart nginx
+  376 clear
+  377 history
+  378 nano ~/.zshrc
+  379 echo /`whoami`/
+  380 echo $HOME
+  381 clear
+  382 sudo nginx -t
+  383 history | grep letsencrypt
+  384 sudo crontab -e
+  385 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+  386 nano ~/.zshrc
+  387 source ~/.zshrc
+  388 clear
+  389 sudo apt-get install --reinstall build-essential -y
+  390 cd ~
+  391 git clone https://github.com/nanorc/nanorc.git
+  392 cd nanorc
+  393 make install
+  394 touch ~/.nanorc
+  395 nano ~/.nanorc
+  396 clear
+  397 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  398 sudo mkdir -p /var/www/peterschmalfeldt.com/resume
+  399 sudo mkdir -p /var/www/peterschmalfeldt.com/lab
+  400 sudo mkdir -p /var/www/peterschmalfeldt.com/home
+  401 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  402 sudo nginx -t
+  403 sudo systemctl restart nginx
+  404 clear
+  405 cd /opt/letsencrypt
+  406 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/website.com/html -d home.peterschmalfeldt.com
+  407 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  408 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/home.peterschmalfeldt.com/html -d home.peterschmalfeldt.com
+  409 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/peterschmalfeldt.com/home -d home.peterschmalfeldt.com
+  410 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/peterschmalfeldt.com/lab -d lab.peterschmalfeldt.com
+  411 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/peterschmalfeldt.com/resume -d resume.peterschmalfeldt.com
+  412 sudo nano /etc/nginx/snippets/ssl-home.peterschmalfeldt.com.com.conf
+  413 sudo mv /etc/nginx/snippets/ssl-home.peterschmalfeldt.com.com.conf /etc/nginx/snippets/ssl-home.peterschmalfeldt.com.conf
+  414 sudo cp /etc/nginx/snippets/ssl-home.peterschmalfeldt.com.conf /etc/nginx/snippets/ssl-lab.peterschmalfeldt.com.conf
+  415 sudo cp /etc/nginx/snippets/ssl-home.peterschmalfeldt.com.conf /etc/nginx/snippets/ssl-resume.peterschmalfeldt.com.conf
+  416 sudo nano /etc/nginx/snippets/ssl-home.peterschmalfeldt.com.conf
+  417 sudo nano /etc/nginx/snippets/ssl-lab.peterschmalfeldt.com.conf
+  418 sudo nano /etc/nginx/snippets/ssl-resume.peterschmalfeldt.com.conf
+  419 sudo chmod -R u+rwX,go+rX,go-w /var/www/peterschmalfeldt.com/lab
+  420 sudo chmod -R u+rwX,go+rX,go-w /var/www/peterschmalfeldt.com/home
+  421 sudo chmod -R u+rwX,go+rX,go-w /var/www/peterschmalfeldt.com/resume
+  422 sudo chown -R $USER:$USER /var/www/peterschmalfeldt.com/lab
+  423 sudo chown -R $USER:$USER /var/www/peterschmalfeldt.com/home
+  424 sudo chown -R $USER:$USER /var/www/peterschmalfeldt.com/resume
+  425 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  426 sudo nginx -t
+  427 sudo systemctl restart nginx
+  428 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  429 sudo systemctl restart nginx
+  430 sudo nano /etc/nginx/sites-available/resize.mobi
+  431 sudo nano /etc/nginx/sites-available/peterschmalfeldt.com
+  432 sudo systemctl restart nginx
+  433 sudo mkdir -p /var/www/civil.services/html
+  434 sudo nano /etc/nginx/sites-available/civil.services
+  435 sudo ln -s /etc/nginx/sites-available/civil.services /etc/nginx/sites-enabled/
+  436 cd /var/www/civil.services/html
+  437 nano index.html
+  438 sudo nginx -t
+  439 sudo systemctl restart nginx
+  440 cd /opt/letsencrypt
+  441 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/civil.services/html -d civil.services -d www.civil.services
+  442 sudo nano /etc/nginx/snippets/ssl-civil.services.conf
+  443 sudo nano /etc/nginx/sites-available/civil.services
+  444 sudo nginx -t
+  445 sudo systemctl restart nginx
+  446 cd /var/www/civil.services/html
+  447 nano index.html
+  448 sudo systemctl restart nginx
+  449 cd /var/www/civil.services/html
+  450 nano index.html
+  451 sudo systemctl restart nginx
+  452 sudo nginx -t
+  453 sudo nano /etc/nginx/sites-available/civil.services
+  454 ping civil.services
+  455 cd /var/www/civil.services/html
+  456 ls
+  457 ls -al
+  458 cd ../
+  459 mv html _html
+  460 ls -al
+  461 mkdir html
+  462 cd html
+  463 git clone git@github.com:CivilServiceUSA/coming-soon-website.git .
+  464 history | grep agent
+  465 eval "$(ssh-agent -s)"
+  466 su mrmidi
+  467 ls -al ~/.ssh
+  468 ssh-keygen -t rsa -b 4096 -C "peter@manifestinteractive.com"
+  469 eval "$(ssh-agent -s)"
+  470 ssh-add ~/.ssh/github
+  471 cat /root/.ssh/github.pub
+  472 git clone git@github.com:CivilServiceUSA/coming-soon-website.git .
+  473 cd ../
+  474 mv _html/.well-known html
+  475 cd html
+  476 ls -al
+  477 git fetch && git pull
+  478 cd /var/www/civil.services/html
+  479 git fetch && git pull
+  480 eval "$(ssh-agent -s)"
+  481 git fetch && git pull
+  482 ssh-add ~/.ssh/github
+  483 nano ~/.zshrc
+  484 git fetch && git pull
+  485 cd /var/www/civil.services/html
+  486 git fetch && git pull
+  487 cd /var/www/civil.services/html
+  488 git fetch && git pull
+  489 cd /var/www/civil.services/html
+  490 git fetch && git pull
+  491 cd /var/www/faicons.com
+  492 cd html
+  493 git fetch && git pull
+  494 ls -a
+  495 ls -al
+  496 sudo mkdir -p /var/www/slack.civil.services/html
+  497 sudo nano /etc/nginx/sites-available/slack.civil.services
+  498 sudo nano /etc/nginx/sites-available/civil.services
+  499 sudo nano /etc/nginx/sites-available/slack.civil.services
+  500 sudo nano /etc/nginx/sites-available/civil.services
+  501 which php
+  502 sudo nano /etc/nginx/sites-available/peter.build
+  503 sudo nano /etc/nginx/sites-available/briosum.com
+  504 sudo nano /etc/nginx/sites-available/default
+  505 sudo nano /etc/nginx/sites-available/
+  506 sudo nano /etc/nginx/sites-available/guid.it
+  507 sudo nano /etc/nginx/sites-available/slack.civil.services
+  508 sudo ln -s /etc/nginx/sites-available/slack.civil.services /etc/nginx/sites-enabled/
+  509 cd /var/www/slack.civil.services/html
+  510 ls -al
+  511 git clone git@github.com:CivilServiceUSA/slack-auto-invite.git .
+  512 sudo systemctl restart nginx
+  513 sudo nano /etc/nginx/sites-available/slack.civil.services
+  514 sudo systemctl restart nginx
+  515 sudo nano /etc/nginx/sites-available/slack.civil.services
+  516 sudo systemctl restart nginx
+  517 sudo nano /etc/nginx/sites-available/slack.civil.services
+  518 sudo systemctl restart nginx
+  519 sudo nano /etc/nginx/sites-available/slack.civil.services
+  520 sudo systemctl restart nginx
+  521 ping slack.civil.services
+  522 curl slack.civil.services
+  523 sudo nano /etc/nginx/sites-available/slack.civil.services
+  524 cd /opt/letsencrypt
+  525 ./letsencrypt-auto certonly -a webroot --webroot-path=/var/www/slack.civil.services/html -d slack.civil.services
+  526 sudo nano /etc/nginx/snippets/ssl-slack.civil.services.conf
+  527 sudo chmod -R u+rwX,go+rX,go-w /var/www/slack.civil.services/html
+  528 sudo chown -R $USER:$USER /var/www/slack.civil.services/html
+  529 sudo nginx -t
+  530 sudo nano /etc/nginx/snippets/ssl-slack.civil.services.conf
+  531 sudo nano /etc/nginx/sites-available/slack.civil.services
+  532 sudo systemctl restart nginx
+  533 sudo nano /etc/nginx/sites-available/slack.civil.services
+  534 sudo systemctl restart nginx
+  535 cd /var/www/slack.civil.services/html
+  536 ls
+  537 chmod 755 *.php
+  538 sudo nano /etc/nginx/sites-available/slack.civil.services
+  539 sudo nano /etc/nginx/sites-available/resize.mobi
+  540 sudo nano /etc/nginx/sites-available/slack.civil.services
+  541 sudo systemctl restart nginx
+  542 ls -al /var/www/resize.mobi/html
+  543 ls -al /var/www/slack.civil.services/html
+  544 ls
+  545 cp config.dist.php config.php
+  546 nano config.php
+  547 pwd
+  548 git pull
+  549 git reset --hard
+  550 git pull
+  551 nano index.php
+  552 sudo nano /etc/nginx/sites-available/slack.civil.services
+  553 sudo systemctl restart nginx
+  554 sudo nano /etc/nginx/sites-available/resize.mobi
+  555 sudo nano /etc/nginx/sites-available/slack.civil.services
+  556 sudo systemctl restart nginx
+  557 sudo nano /etc/nginx/sites-available/slack.civil.services
+  558 sudo systemctl restart nginx
+  559 sudo nano /etc/nginx/sites-available/slack.civil.services
+  560 sudo systemctl restart nginx
+  561 sudo nano /etc/nginx/sites-available/slack.civil.services
+  562 sudo systemctl restart nginx
+  563 sudo nano /etc/nginx/sites-available/slack.civil.services
+  564 sudo systemctl restart nginx
+  565 nano /etc/nginx/snippets/basic.conf
+  566 sudo nano /etc/nginx/sites-available/slack.civil.services
+  567 nano /etc/nginx/snippets/basic.conf
+  568 sudo systemctl restart nginx
+  569 sudo nano /etc/nginx/sites-available/slack.civil.services
+  570 sudo systemctl restart nginx
+  571 sudo nano /etc/nginx/sites-available/slack.civil.services

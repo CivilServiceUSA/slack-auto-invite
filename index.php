@@ -131,7 +131,7 @@
     <!-- Signup Form -->
     <form id="signup-form" method="post" action="#" autocomplete="off">
         <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
-        <input type="text" name="invite" id="invite" placeholder="Invite Code" maxlength="6" value="<?= $_REQUEST['invite']; ?>" pattern="[a-zA-Z0-9]{6}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+        <input type="text" name="invite" id="invite" placeholder="Invite Code" maxlength="6" value="<?= $_GET['invite']; ?>" pattern="[a-zA-Z0-9]{6}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
         <input type="submit" value="Get an invite" />
     </form>
 
