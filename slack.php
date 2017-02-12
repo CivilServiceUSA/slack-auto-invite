@@ -61,15 +61,17 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && $valid_invite) {
     if ($signup && $signup['ok'] === true) {
         $response['success'] = true;
 
-        // Send Message to Admin
-        makeApiCall(SLACK_URL . '/api/chat.postMessage', array(
-            'channel' => 'D3EJFKP6W',
-            'token' => SLACK_TOKEN,
-            'text' => $email . ' just used ' . $valid_invite['slack_name'] . '\'s Invite Code to Join our Slack Team.',
-            'as_user' => false,
-            'link_names' => true,
-            'username' => 'New Member Notification'
-        ));
+        // Send Message to Admin if Invite is not Theirs
+        if ($invite !== 'bkx7n2') {
+            makeApiCall(SLACK_URL . '/api/chat.postMessage', array(
+                'channel' => 'D3EJFKP6W',
+                'token' => SLACK_TOKEN,
+                'text' => $email . ' just used ' . $valid_invite['slack_name'] . '\'s Invite Code to Join our Slack Team.',
+                'as_user' => false,
+                'link_names' => true,
+                'username' => 'New Member Notification'
+            ));
+        }
 
         // Send Message to Owner of Invite Code
         makeApiCall(SLACK_URL . '/api/chat.postMessage', array(

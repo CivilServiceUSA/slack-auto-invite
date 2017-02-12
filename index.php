@@ -6,7 +6,7 @@
 
         <title>Civil Services - #slack community</title>
 
-        <meta name="description" content="Civil Services is a Team of Volunteers dedicated to make it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.">
+        <meta name="description" content="Civil Services is a Team of Volunteers dedicated to making it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.">
         <meta name="keywords" content="Civil, Services, Local, State, Federal, Government, Legislation, Accountability, Action, Information, Elected, Officials, API, Developers" />
         <meta name="author" content="Civil Services">
         <meta name="robots" content="noodp,noydir">
@@ -27,7 +27,7 @@
         <meta name="twitter:title" content="Civil Services - #slack community">
         <meta name="twitter:site" content="@CivilServiceUSA">
         <meta name="twitter:creator" content="@CivilServiceUSA">
-        <meta name="twitter:description" content="Civil Services is a Team of Volunteers dedicated to make it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.">
+        <meta name="twitter:description" content="Civil Services is a Team of Volunteers dedicated to making it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.">
         <meta name="twitter:image" content="https://slack.civil.services/assets/images/app-image.jpg">
         <meta name="twitter:image:alt" content="Civil Services - #slack community">
         <meta name="twitter:domain" content="civil.services">
@@ -39,13 +39,13 @@
         <meta property="og:url" content="https://slack.civil.services">
         <meta property="og:image" content="https://slack.civil.services/assets/images/app-image.jpg">
         <meta property="og:site_name" content="Civil Services">
-        <meta property="og:description" content="Civil Services is a Team of Volunteers dedicated to make it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.">
+        <meta property="og:description" content="Civil Services is a Team of Volunteers dedicated to making it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.">
 
         <!-- Dublin Core Metadata -->
         <meta name="dc:language" content="en_US">
         <meta name="dc:title" content="Civil Services - #slack community">
         <meta name="dc:source" content="https://slack.civil.services">
-        <meta name="dc:description" content="Civil Services is a Team of Volunteers dedicated to make it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.">
+        <meta name="dc:description" content="Civil Services is a Team of Volunteers dedicated to making it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.">
 
         <!-- Structured Metadata -->
         <script type="application/ld+json">
@@ -66,7 +66,7 @@
                 "postalCode": "33701",
                 "streetAddress": "200 2nd Avenue South"
               },
-              "description": "Civil Services is a Team of Volunteers dedicated to make it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.",
+              "description": "Civil Services is a Team of Volunteers dedicated to making it possible for citizens to be a part of what is happening in their Local, State & Federal Governments.",
               "name": "Civil Services",
               "telephone": "N/A",
               "priceRange": "0",
@@ -125,7 +125,7 @@
     <header id="header">
         <img src="assets/images/logo.png" width="100px">
         <h1>Join our #slack community</h1>
-        <p><b>Civil Services</b> is a team dedicated to make it possible for citizens <br>to be a part of what is happening in their Local, State &amp; Federal Governments.</p>
+        <p><b>Civil Services</b> is a team dedicated to making it possible for citizens <br>to be a part of what is happening in their Local, State &amp; Federal Governments.</p>
     </header>
 
     <!-- Signup Form -->
